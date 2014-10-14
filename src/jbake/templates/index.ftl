@@ -14,4 +14,4 @@
     <p>Older posts are available in the <a href="/${config.archive_file}">archive</a>.</p>
 </#macro>
 
-<@template body=body/>
+<@template title="Sala Blog. Blog about git, Java, Gradle and other stuff" body=body/>
