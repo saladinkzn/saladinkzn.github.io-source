@@ -8,3 +8,5 @@ githubPages {
     }
   }
 }
+
+project.tasks.publishGhPages.dependsOn project.tasks.jbake
