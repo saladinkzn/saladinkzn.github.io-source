@@ -1,6 +1,8 @@
 buildscript {
 	repositories {
 		jcenter()
+		// for augmentor
+		maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
 	}
 	
 	dependencies {
@@ -12,11 +14,17 @@ buildscript {
 		classpath 'org.freemarker:freemarker:2.3.19'
 
     classpath 'org.ajoberstar:gradle-git:0.11.1'
+
+		classpath 'ru.shadam.augmentor:augmentor:0.1-SNAPSHOT'
   }
 }
 
 apply plugin: 'me.champeau.jbake'
 apply from: 'publish.gradle'
+
+task 're-bake'(type: ru.shadam.augmentor.AugmentorTask) {
+	innerTask = 'jbake'
+}
 
 task wrapper(type: Wrapper) {
 	gradleVersion = '2.1'
