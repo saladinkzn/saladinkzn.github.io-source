@@ -2,7 +2,7 @@ title=Шпаргалка Docker
 date=2014-10-22
 type=post
 tags=blog
-status=draft
+status=published
 ~~~~~~
 
 ### Создание образа
