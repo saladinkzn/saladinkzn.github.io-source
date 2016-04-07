@@ -9,7 +9,7 @@ buildscript {
 		classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2'
 		
 		// optional, if you use asciidoctor markup
-		classpath 'org.pegdown:pegdown:1.4.2'
+		classpath 'org.pegdown:pegdown:1.6.0'
 
 		classpath 'org.freemarker:freemarker:2.3.19'
 
@@ -27,5 +27,5 @@ task 're-bake'(type: ru.shadam.augmentor.AugmentorTask) {
 }
 
 task wrapper(type: Wrapper) {
-	gradleVersion = '2.1'
+	gradleVersion = '2.11'
 }
