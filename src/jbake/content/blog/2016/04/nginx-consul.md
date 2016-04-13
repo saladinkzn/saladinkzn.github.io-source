@@ -2,7 +2,7 @@ title=Docker+Consul+Nginx, используем Service Discovery для кон�
 date=2016-04-06
 type=post
 tags=blog
-status=draft
+status=published
 ~~~~~~
 
 # Зачем это вообще нужно?
